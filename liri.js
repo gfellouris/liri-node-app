@@ -18,29 +18,24 @@
 var command = process.argv[2];
 var query = process.argv[3];
 var axios = require("axios");
+var commandFound = true;
 
 switch (command) {
   case "concert-this":
-    getConcertInfo();
+    var apiURI =
+      "https://rest.bandsintown.com/artists/" +
+      query +
+      "/events?app_id=codingbootcamp";
     break;
   case "movie-this":
-    getMovieInfo(query);
+    var apiURI =
+      "http://www.omdbapi.com/?t=" + query + "&y=&plot=short&apikey=trilogy";
     break;
   default:
     console.log("Sorry - command not understood.");
+    commandFound = false;
 }
-
-function getConcertInfo(artist) {
-  console.log("get concertinfo called");
-  var apiURI =
-    "https://rest.bandsintown.com/artists/" +
-    artist +
-    "/events?app_id=codingbootcamp";
-}
-
-function getMovieInfo(movie) {
-  var apiURI =
-    "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+if (commandFound) {
   axiosGet(apiURI);
 }
 
@@ -64,8 +59,11 @@ function axiosGet(url) {
   axios
     .get(url)
     .then(function(response) {
-      //   console.log(response);
-      outputMovieInfo(response);
+      if (command === "movie-this") {
+        outputMovieInfo(response);
+      } else {
+        console.log(response);
+      }
     })
     .catch(function(error) {
       onError(error);
