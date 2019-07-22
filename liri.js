@@ -1,9 +1,3 @@
-// 9. Make it so liri.js can take in one of the following commands:
-//    * `concert-this`
-//    * `spotify-this-song`
-//    * `movie-this`
-//    * `do-what-it-says`
-
 // add code to read and set any environment variables with the dotenv package:
 // require("dotenv").config();
 
@@ -19,6 +13,17 @@ var command = process.argv[2];
 var query = process.argv[3];
 var axios = require("axios");
 var commandFound = true;
+var movieFields = [
+  "Title",
+  "Year",
+  "imdbRating",
+  "Rated",
+  "Country",
+  "Language",
+  "Plot",
+  "Actors"
+];
+var eventFields = ["name", "country", "region", "city","datetime"];
 
 switch (command) {
   case "concert-this":
@@ -39,30 +44,34 @@ if (commandFound) {
   axiosGet(apiURI);
 }
 
-function outputMovieInfo(apiResponse) {
-  var fields = [
-    "Title",
-    "Year",
-    "imdbRating",
-    "Rated",
-    "Country",
-    "Language",
-    "Plot",
-    "Actors"
-  ];
+function outputMovieInfo(apiResponse, fields) {
   for (var i = 0; i < fields.length; i++) {
     console.log(fields[i] + ": " + apiResponse.data[fields[i]]);
   }
 }
+
+function outputEventInfo(apiResponse, fields) {
+  for (var i = 0; i < apiResponse.data.length; i++) {
+    console.log("===========================================")
+    for (var x = 0; x < fields.length-1; x++) {
+      console.log(fields[x] + ": " + apiResponse.data[i].venue[fields[x]]);
+    }
+    var date = apiResponse.data[i][fields[fields.length-1]];
+    // var date = date.getMonth();
+    console.log(fields[fields.length-1] + ": " + date);
+  }
+  debugger;
+}
+
 // Then run a request with axios to the OMDB API with the movie specified
 function axiosGet(url) {
   axios
     .get(url)
     .then(function(response) {
       if (command === "movie-this") {
-        outputMovieInfo(response);
+        outputMovieInfo(response, movieFields);
       } else {
-        console.log(response);
+        outputEventInfo(response, eventFields);
       }
     })
     .catch(function(error) {
