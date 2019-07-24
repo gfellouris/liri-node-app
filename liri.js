@@ -13,17 +13,6 @@ var command = process.argv[2];
 var query = process.argv[3];
 var axios = require("axios");
 var commandFound = true;
-var movieFields = [
-  "Title",
-  "Year",
-  "imdbRating",
-  "Rated",
-  "Country",
-  "Language",
-  "Plot",
-  "Actors"
-];
-var eventFields = ["name", "country", "region", "city","datetime"];
 
 switch (command) {
   case "concert-this":
@@ -44,34 +33,50 @@ if (commandFound) {
   axiosGet(apiURI);
 }
 
-function outputMovieInfo(apiResponse, fields) {
-  for (var i = 0; i < fields.length; i++) {
-    console.log(fields[i] + ": " + apiResponse.data[fields[i]]);
-  }
+function outputMovieInfo(apiResponse) {
+  console.log("===========================================");
+  console.log("Title:\t\t" + apiResponse.data.Title);
+  console.log("Release Year:\t" + apiResponse.data.Year);
+  console.log("IMDB Rating:\t" + apiResponse.data.imdbRating);
+  console.log("Rotten Tomatoes Rating:\t" + apiResponse.data.Ratings[1].Value);
+  console.log("Country:\t" + apiResponse.data.Country);
+  console.log("Language:\t" + apiResponse.data.Language);
+  console.log("Plot:\t\t" + apiResponse.data.Plot);
+  console.log("Actors:\t\t" + apiResponse.data.Actors);
+  console.log("===========================================");
 }
 
-function outputEventInfo(apiResponse, fields) {
+function outputConcertInfo(apiResponse) {
+  var eventFields = ["name", "country", "region", "city", "datetime"];
+
   for (var i = 0; i < apiResponse.data.length; i++) {
-    console.log("===========================================")
-    for (var x = 0; x < fields.length-1; x++) {
-      console.log(fields[x] + ": " + apiResponse.data[i].venue[fields[x]]);
-    }
-    var date = apiResponse.data[i][fields[fields.length-1]];
-    // var date = date.getMonth();
-    console.log(fields[fields.length-1] + ": " + date);
+    console.log("===========================================");
+    console.log("Venue:\t\t" + apiResponse.data[i].venue.name);
+    var location = apiResponse.data[i].venue.city + ", ";
+    location += apiResponse.data[i].venue.region;
+    location += " (" + apiResponse.data[i].venue.country + ")";
+    console.log("Location:\t" + location);
+    console.log("Date:\t\t" + shortDate(apiResponse.data[i].datetime));
   }
-  debugger;
 }
 
+function shortDate(datetime) {
+  var sDate = datetime
+    .split("T", 1)
+    .toString()
+    .split("-");
+
+  return sDate[1] + "/" + sDate[2] + "/" + sDate[0];
+}
 // Then run a request with axios to the OMDB API with the movie specified
 function axiosGet(url) {
   axios
     .get(url)
     .then(function(response) {
       if (command === "movie-this") {
-        outputMovieInfo(response, movieFields);
+        outputMovieInfo(response);
       } else {
-        outputEventInfo(response, eventFields);
+        outputConcertInfo(response);
       }
     })
     .catch(function(error) {
