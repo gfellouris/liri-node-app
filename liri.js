@@ -1,18 +1,6 @@
-// add code to read and set any environment variables with the dotenv package:
-// require("dotenv").config();
-
-// Add the code required to import the `keys.js` file and store it in a variable
-// var keys = require("./keys.js");
-
-// You should then be able to access your keys information like so
-// var spotify = new Spotify(keys.spotify);
-// ==================
-
-// Include the axios npm package (Don't forget to run "npm install axios" in this folder first!)
 var command = process.argv[2];
 var query = process.argv[3];
 var axios = require("axios");
-var commandFound = true;
 
 switch (command) {
   case "concert-this":
@@ -20,17 +8,51 @@ switch (command) {
       "https://rest.bandsintown.com/artists/" +
       query +
       "/events?app_id=codingbootcamp";
+    axiosGet(apiURI);
     break;
   case "movie-this":
     var apiURI =
       "http://www.omdbapi.com/?t=" + query + "&y=&plot=short&apikey=trilogy";
+    axiosGet(apiURI);
+    break;
+  case "spotify-this-song":
+    outputSpotify();
     break;
   default:
     console.log("Sorry - command not understood.");
-    commandFound = false;
 }
-if (commandFound) {
-  axiosGet(apiURI);
+
+function outputSpotify() {
+  // add code to read and set any environment variables with the dotenv package:
+  require("dotenv").config();
+
+  // Add the code required to import the `keys.js` file and store it in a variable
+  var keys = require("./keys.js");
+
+  // You should then be able to access your keys information like so
+  var Spotify = require("node-spotify-api");
+  var spotify = new Spotify(keys.spotify);
+
+  spotify.search({ type: "track", query: "thriller" }, function(err, data) {
+    if (err) {
+      return console.log("Error occurred: " + err);
+    }
+
+    // console.log(data);
+    // * Artist(s)
+    // * The song's name
+    // * A preview link of the song from Spotify
+    // * The album that the song is from
+    var tracks = data.tracks;
+    for (var i = 0; i < data.tracks.items.length; i++) {
+      console.log("===========================================");
+      console.log("Artists:\t\t" + tracks.items[i].album.artists[0].name);
+      console.log("Song name:\t\t" + query);
+      console.log("Album:\t\t" + tracks.items[i].album.name);
+      console.log("Preview Song:\t\t" + tracks.items[i].preview_url);
+      console.log("===========================================");
+    }
+  });
 }
 
 function outputMovieInfo(apiResponse) {
