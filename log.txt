@@ -1,0 +1,518 @@
+
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/12/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/14/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/17/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/15/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/19/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/21/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/22/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/24/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/25/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/26/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		09/28/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/01/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/02/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/03/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/05/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/06/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/16/2019
+===========================================
+Venue:		BAM (Brooklyn Academy of Music)
+Location:	Brooklyn, NY (United States)
+Date:		10/07/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/15/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/17/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/21/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/23/2019
+===========================================
+Venue:		The Chicago Theatre
+Location:	Chicago, IL (United States)
+Date:		10/24/2019
+===========================================
+Venue:		Spiegeltent at Caesars Palace
+Location:	Las Vegas, NV (United States)
+Date:		11/07/2019
+===========================================
+Venue:		Spiegeltent at Caesars Palace
+Location:	Las Vegas, NV (United States)
+Date:		11/10/2019
+===========================================
+Venue:		Spiegeltent at Caesars Palace
+Location:	Las Vegas, NV (United States)
+Date:		11/09/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/12/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/13/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/14/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/16/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/17/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/19/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/20/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/21/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/23/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/24/2019
+===========================================
+Venue:		The Wiltern
+Location:	Los Angeles, CA (United States)
+Date:		11/25/2019
+===========================================
+Venue:		Boch Center - Wang Theatre
+Location:	Boston, MA (United States)
+Date:		11/30/2019
+===========================================
+Venue:		Boch Center - Wang Theatre
+Location:	Boston, MA (United States)
+Date:		12/01/2019
+===========================================
+Venue:		Boch Center - Wang Theatre
+Location:	Boston, MA (United States)
+Date:		12/02/2019
+===========================================
+Venue:		The Met Philadelphia
+Location:	Philadelphia, PA (United States)
+Date:		12/07/2019
+===========================================
+Venue:		The Met Philadelphia
+Location:	Philadelphia, PA (United States)
+Date:		12/11/2019
+===========================================
+Venue:		Backstage at the Fillmore Miami Beach
+Location:	Miami Beach, FL (United States)
+Date:		12/14/2019
+===========================================
+Venue:		The Met Philadelphia
+Location:	Philadelphia, PA (United States)
+Date:		12/08/2019
+===========================================
+Venue:		Backstage at the Fillmore Miami Beach
+Location:	Miami Beach, FL (United States)
+Date:		12/15/2019
+===========================================
+Venue:		Backstage at the Fillmore Miami Beach
+Location:	Miami Beach, FL (United States)
+Date:		12/17/2019
+===========================================
+Venue:		Backstage at the Fillmore Miami Beach
+Location:	Miami Beach, FL (United States)
+Date:		12/18/2019
+===========================================
+Venue:		Coliseu dos Recreios
+Location:	Lisboa,  (Portugal)
+Date:		01/16/2020
+===========================================
+Venue:		Backstage at the Fillmore Miami Beach
+Location:	Miami Beach, FL (United States)
+Date:		12/19/2019
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		01/26/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		01/29/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		01/27/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		01/30/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/01/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/02/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/04/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/05/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/06/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/11/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/08/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/09/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/13/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/12/2020
+===========================================
+Venue:		London Palladium
+Location:	London,  (United Kingdom)
+Date:		02/15/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/19/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/20/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/18/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/21/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/22/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/25/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/23/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/26/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/27/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		02/29/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		03/03/2020
+===========================================
+Venue:		Grand Rex Paris
+Location:	Paris,  (France)
+Date:		03/04/2020
+===========================================
+Venue:		GRAND REX
+Location:	Paris,  (France)
+Date:		03/01/2020
+===========================================
+Title:		Braveheart
+Release Year:	1995
+IMDB Rating:	8.4
+Rotten Tomatoes Rating:	77%
+Country:	USA, Ireland
+Language:	English, French, Latin, Scottish Gaelic, Italian
+Plot:		When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors:		James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+===========================================
+Artists:		Christopher Cross
+Song name:		Sailing
+Album:			Christopher Cross
+Preview Song:		https://p.scdn.co/mp3-preview/55556c40705f9a1b8ff8ee20e95a0b744fe18356?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Rod Stewart
+Song name:		Sailing
+Album:			Atlantic Crossing
+Preview Song:		https://p.scdn.co/mp3-preview/c439e993211cf5bc0c7da7b1b9821528ebce79cd?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Phil Wickham
+Song name:		Divine / Sailing / Time / Hymn - Acoustic
+Album:			Children of God Acoustic Sessions
+Preview Song:		https://p.scdn.co/mp3-preview/2056d62f5018c991b06bab7a4f822acdb73b7944?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Queens of the Stone Age
+Song name:		Smooth Sailing
+Album:			...Like Clockwork
+Preview Song:		https://p.scdn.co/mp3-preview/d8afb02a05b3853eb7335bb64f10eba72974fa1a?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Flughand
+Song name:		Sailing
+Album:			Sailing
+Preview Song:		https://p.scdn.co/mp3-preview/d0b725bc50e6ef3ab04607f8934e97fae3663031?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		White Noise Therapy
+Song name:		Smooth Sailing
+Album:			Pink Noise
+Preview Song:		https://p.scdn.co/mp3-preview/be34e44b2ac8a0d797f97b384f5496b766abf485?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Primus
+Song name:		Jerry Was A Race Car Driver
+Album:			Sailing The Seas Of Cheese
+Preview Song:		null
+===========================================
+Artists:		Christopher Cross
+Song name:		Sailing
+Album:			Rhino Hi-Five: Christopher Cross
+Preview Song:		https://p.scdn.co/mp3-preview/fe5e276cb5a370e3424aecd1d33b1418e8d596ed?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Wun Two
+Song name:		Sailing Home
+Album:			Pirata
+Preview Song:		https://p.scdn.co/mp3-preview/7f83e0b077db4987f80554b5a2493cbefc28f93f?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Wun Two
+Song name:		Sailing Home
+Album:			Pirata (German Edition)
+Preview Song:		https://p.scdn.co/mp3-preview/978408c978bd2fe4967fc4399507d3332ef89cfd?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		AVEC
+Song name:		Sailing Away
+Album:			Heartbeats
+Preview Song:		https://p.scdn.co/mp3-preview/4d35ccfbb6870f5a7a1309c27f46c46cdd02ef27?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Dirtwire
+Song name:		Sailing the Solar Flares
+Album:			Dirtwire
+Preview Song:		https://p.scdn.co/mp3-preview/d999f082b07a9fbb3e1243ce4cfcf88d8e328fca?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Primus
+Song name:		American Life
+Album:			Sailing The Seas Of Cheese
+Preview Song:		null
+===========================================
+Artists:		Ella Fitzgerald
+Song name:		Smooth Sailing
+Album:			Lullabies Of Birdland
+Preview Song:		null
+===========================================
+Artists:		*NSYNC
+Song name:		Sailing
+Album:			'N Sync
+Preview Song:		https://p.scdn.co/mp3-preview/4544ecb7235acab6a13ece200dd13efc2fa192b2?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Various Artists
+Song name:		Sailing Above
+Album:			Chillhop Essentials Winter 2017
+Preview Song:		https://p.scdn.co/mp3-preview/4e07b273b1ff011f461c5cb2e30b6e0c7cd5754e?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Avant
+Song name:		Sailing
+Album:			Avant
+Preview Song:		null
+===========================================
+Artists:		Mark Knopfler
+Song name:		What It Is
+Album:			Sailing To Philadelphia
+Preview Song:		https://p.scdn.co/mp3-preview/61741dc79fd91090c362202d66c37dce5a1b215f?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Dire Straits & Mark Knopfler
+Song name:		Sailing to Philadelphia
+Album:			The Best of - Private Investigations
+Preview Song:		https://p.scdn.co/mp3-preview/8c6b51186dbff405c20fff86b274d6d809296fcf?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Randy Newman
+Song name:		I Will Go Sailing No More - From "Toy Story"/Soundtrack Version
+Album:			Toy Story
+Preview Song:		null
+===========================================
+Artists:		Backstreet Boys
+Song name:		I Want It That Way
+Album:			The Hits--Chapter One
+Preview Song:		https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Mick Jensen
+Song name:		I Want It That Way
+Album:			I Want It That Way
+Preview Song:		https://p.scdn.co/mp3-preview/f8181f66713983fab073e133e23c741acbe00d75?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Backstreet Boys
+Song name:		I Want It That Way
+Album:			Millennium
+Preview Song:		https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Anthem Lights
+Song name:		I Want It That Way
+Album:			Covers Part IV
+Preview Song:		https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Backstreet Boys
+Song name:		I Want It That Way - Reimagined
+Album:			I Want It That Way (Reimagined)
+Preview Song:		https://p.scdn.co/mp3-preview/7f612d6ba66571500e981e74bb36e14b9906be77?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		"Weird Al" Yankovic
+Song name:		Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Album:			Poodle Hat
+Preview Song:		https://p.scdn.co/mp3-preview/e217ea111ab84a777f204252fce4b18d5de3ae80?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Tyler and Mark
+Song name:		I Want It That Way
+Album:			Beautiful Dreams
+Preview Song:		https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Jess and Gabriel
+Song name:		I Want It That Way
+Album:			Under the Covers, Vol. 3
+Preview Song:		https://p.scdn.co/mp3-preview/cc50bfee8d34ec92fda4109243c7ef0e6856f185?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Punk Goes
+Song name:		I Want It That Way
+Album:			Punk Goes Pop
+Preview Song:		null
+===========================================
+Artists:		Various Artists
+Song name:		I Want It That Way
+Album:			90 Sweet 90s Hits!
+Preview Song:		https://p.scdn.co/mp3-preview/2f96341eb8415a3efb27375db1c4d59928408c2f?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Steel Panther
+Song name:		I Want It That Way
+Album:			I Want It That Way
+Preview Song:		null
+===========================================
+Artists:		Glee Cast
+Song name:		Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Album:			Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Preview Song:		https://p.scdn.co/mp3-preview/3aa63b5c98b98ae333e567813e5c720abb2914f0?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		NKOTBSB
+Song name:		I Want It That Way
+Album:			NKOTBSB
+Preview Song:		https://p.scdn.co/mp3-preview/adf2485de3f3f375593b5307a792e8d8e6f19794?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Boyce Avenue
+Song name:		I Want It That Way
+Album:			Cover Sessions, Vol. 2
+Preview Song:		https://p.scdn.co/mp3-preview/764f1dcb8c9a9cec099cc361cb388f931bf023d3?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Scary Pockets
+Song name:		I Want It That Way
+Album:			Nu Funk
+Preview Song:		https://p.scdn.co/mp3-preview/33685e005149d5e7d0199a764163ff77f7762e29?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Manuel Costa
+Song name:		I Want It That Way
+Album:			I Want It That Way
+Preview Song:		https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Scott Bradlee's Postmodern Jukebox
+Song name:		I Want It That Way
+Album:			Selfies on Kodachrome
+Preview Song:		https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		"Weird Al" Yankovic
+Song name:		Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Album:			The Essential "Weird Al" Yankovic
+Preview Song:		https://p.scdn.co/mp3-preview/5632d8e302d70afaa8f79c962aa4b2032a45b3ef?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Yshop
+Song name:		I Want It That Way
+Album:			I Want It That Way
+Preview Song:		https://p.scdn.co/mp3-preview/8d1287b933d37b96943a5041ebcd46c328c9a0ce?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================
+Artists:		Love Hits On Piano
+Song name:		I Want It That Way
+Album:			Timeless Love
+Preview Song:		https://p.scdn.co/mp3-preview/f44bea13dbf31275a76f3dee8c40dcf25bd051f1?cid=dff482d3aa4a4dc88b1125b33f84f629
+===========================================

@@ -1,6 +1,5 @@
 var command = process.argv[2];
-// var query = process.argv[3];
-var query = process.argv.slice(3).join(" ");
+var query = process.argv.slice(3).join(" "); // Joining the remaining arguments since the query may contain spaces
 var axios = require("axios");
 
 switch (command) {
@@ -22,10 +21,35 @@ switch (command) {
     }
     outputSpotify(query);
     break;
+  case "do-what-it-says":
+    outputDWIS();
+    break;
   default:
     console.log("Sorry - command not understood.");
 }
+// =======================================================================
+function outputLog(outputData) {
+  var fs = require("fs");
+  var filename = "log.txt";
 
+  fs.appendFile(filename, "\n" + outputData, function(err) {
+    if (err) throw err;
+    console.log(outputData);
+  });
+}
+// =======================================================================
+function outputDWIS() {
+  var fs = require("fs");
+
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    if (error) {
+      return console.log(error);
+    }
+    var dataArr = data.split(",");
+    outputSpotify(dataArr[1]);
+  });
+}
+// =======================================================================
 function outputSpotify(spotifySearch) {
   // add code to read and set any environment variables with the dotenv package:
   require("dotenv").config();
@@ -36,55 +60,59 @@ function outputSpotify(spotifySearch) {
   // You should then be able to access your keys information like so
   var Spotify = require("node-spotify-api");
   var spotify = new Spotify(keys.spotify);
-  spotify.search({ type: "track", query: "\"" + spotifySearch + "\"" }, function(err, data) {
+  spotify.search({ type: "track", query: '"' + spotifySearch + '"' }, function(
+    err,
+    data
+  ) {
     if (err) {
       return console.log("Error occurred: " + err);
     }
 
-    // console.log(data);
-    // * Artist(s)
-    // * The song's name
-    // * A preview link of the song from Spotify
-    // * The album that the song is from
     var tracks = data.tracks;
     for (var i = 0; i < data.tracks.items.length; i++) {
-      console.log("===========================================");
-      console.log("Artists:\t\t" + tracks.items[i].album.artists[0].name);
-      console.log("Song name:\t\t" + tracks.items[i].name);
-      console.log("Album:\t\t" + tracks.items[i].album.name);
-      console.log("Preview Song:\t\t" + tracks.items[i].preview_url);
-      console.log("===========================================");
+      var showData = [
+        "Artists:\t\t" + tracks.items[i].album.artists[0].name,
+        "Song name:\t\t" + tracks.items[i].name,
+        "Album:\t\t\t" + tracks.items[i].album.name,
+        "Preview Song:\t\t" + tracks.items[i].preview_url,
+        "==========================================="
+      ].join("\n");
+      outputLog(showData);
     }
   });
 }
-
+// =======================================================================
 function outputMovieInfo(apiResponse) {
-  console.log("===========================================");
-  console.log("Title:\t\t" + apiResponse.data.Title);
-  console.log("Release Year:\t" + apiResponse.data.Year);
-  console.log("IMDB Rating:\t" + apiResponse.data.imdbRating);
-  console.log("Rotten Tomatoes Rating:\t" + apiResponse.data.Ratings[1].Value);
-  console.log("Country:\t" + apiResponse.data.Country);
-  console.log("Language:\t" + apiResponse.data.Language);
-  console.log("Plot:\t\t" + apiResponse.data.Plot);
-  console.log("Actors:\t\t" + apiResponse.data.Actors);
-  console.log("===========================================");
+  var showData = [
+    "Title:\t\t" + apiResponse.data.Title,
+    "Release Year:\t" + apiResponse.data.Year,
+    "IMDB Rating:\t" + apiResponse.data.imdbRating,
+    "Rotten Tomatoes Rating:\t" + apiResponse.data.Ratings[1].Value,
+    "Country:\t" + apiResponse.data.Country,
+    "Language:\t" + apiResponse.data.Language,
+    "Plot:\t\t" + apiResponse.data.Plot,
+    "Actors:\t\t" + apiResponse.data.Actors,
+    "==========================================="
+  ].join("\n");
+  outputLog(showData);
 }
-
+// =======================================================================
 function outputConcertInfo(apiResponse) {
-  var eventFields = ["name", "country", "region", "city", "datetime"];
-
   for (var i = 0; i < apiResponse.data.length; i++) {
-    console.log("===========================================");
-    console.log("Venue:\t\t" + apiResponse.data[i].venue.name);
     var location = apiResponse.data[i].venue.city + ", ";
     location += apiResponse.data[i].venue.region;
     location += " (" + apiResponse.data[i].venue.country + ")";
-    console.log("Location:\t" + location);
-    console.log("Date:\t\t" + shortDate(apiResponse.data[i].datetime));
+
+    var showData = [
+      "Venue:\t\t" + apiResponse.data[i].venue.name,
+      "Location:\t" + location,
+      "Date:\t\t" + shortDate(apiResponse.data[i].datetime),
+      "==========================================="
+    ].join("\n");
+    outputLog(showData);
   }
 }
-
+// =======================================================================
 function shortDate(datetime) {
   var sDate = datetime
     .split("T", 1)
@@ -93,7 +121,7 @@ function shortDate(datetime) {
 
   return sDate[1] + "/" + sDate[2] + "/" + sDate[0];
 }
-// Then run a request with axios to the OMDB API with the movie specified
+// =======================================================================
 function axiosGet(url) {
   axios
     .get(url)
@@ -108,20 +136,6 @@ function axiosGet(url) {
       onError(error);
     });
 }
-
-function template() {
-  axios
-    .get(
-      "http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy"
-    )
-    .then(function(response) {
-      console.log("The movie's rating is: " + response.data.imdbRating);
-    })
-    .catch(function(error) {
-      onError(error);
-    });
-}
-
 // ===============================================
 function onError(error) {
   if (error.response) {
