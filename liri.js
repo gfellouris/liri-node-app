@@ -1,5 +1,6 @@
 var command = process.argv[2];
-var query = process.argv[3];
+// var query = process.argv[3];
+var query = process.argv.slice(3).join(" ");
 var axios = require("axios");
 
 switch (command) {
@@ -16,13 +17,16 @@ switch (command) {
     axiosGet(apiURI);
     break;
   case "spotify-this-song":
-    outputSpotify();
+    if (query === "" || query === null || query === undefined) {
+      var query = "The Sign";
+    }
+    outputSpotify(query);
     break;
   default:
     console.log("Sorry - command not understood.");
 }
 
-function outputSpotify() {
+function outputSpotify(spotifySearch) {
   // add code to read and set any environment variables with the dotenv package:
   require("dotenv").config();
 
@@ -32,8 +36,7 @@ function outputSpotify() {
   // You should then be able to access your keys information like so
   var Spotify = require("node-spotify-api");
   var spotify = new Spotify(keys.spotify);
-
-  spotify.search({ type: "track", query: "thriller" }, function(err, data) {
+  spotify.search({ type: "track", query: "\"" + spotifySearch + "\"" }, function(err, data) {
     if (err) {
       return console.log("Error occurred: " + err);
     }
@@ -47,7 +50,7 @@ function outputSpotify() {
     for (var i = 0; i < data.tracks.items.length; i++) {
       console.log("===========================================");
       console.log("Artists:\t\t" + tracks.items[i].album.artists[0].name);
-      console.log("Song name:\t\t" + query);
+      console.log("Song name:\t\t" + tracks.items[i].name);
       console.log("Album:\t\t" + tracks.items[i].album.name);
       console.log("Preview Song:\t\t" + tracks.items[i].preview_url);
       console.log("===========================================");
