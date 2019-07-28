@@ -1,32 +1,7 @@
-var command = process.argv[2];
-var query = process.argv.slice(3).join(" "); // Joining the remaining arguments since the query may contain spaces
+var cmd = process.argv[2];
+var qry = process.argv.slice(3).join(" "); // Joining the remaining arguments since the query may contain spaces
 var axios = require("axios");
 
-switch (command) {
-  case "concert-this":
-    var apiURI =
-      "https://rest.bandsintown.com/artists/" +
-      query +
-      "/events?app_id=codingbootcamp";
-    axiosGet(apiURI);
-    break;
-  case "movie-this":
-    var apiURI =
-      "http://www.omdbapi.com/?t=" + query + "&y=&plot=short&apikey=trilogy";
-    axiosGet(apiURI);
-    break;
-  case "spotify-this-song":
-    if (query === "" || query === null || query === undefined) {
-      var query = "The Sign";
-    }
-    outputSpotify(query);
-    break;
-  case "do-what-it-says":
-    outputDWIS();
-    break;
-  default:
-    console.log("Sorry - command not understood.");
-}
 // =======================================================================
 function outputLog(outputData) {
   var fs = require("fs");
@@ -45,8 +20,15 @@ function outputDWIS() {
     if (error) {
       return console.log(error);
     }
-    var dataArr = data.split(",");
-    outputSpotify(dataArr[1]);
+    var dataRow = data.split("\n");
+    for (var i=0; i < dataRow.length; i++) {
+      // console.log(i + ":" + dataRow[i])
+      // var dataArr = data.split(",");
+      var dataArr = dataRow[i].split(",");
+      console.log(dataArr[0] + ":" + dataArr[1]);
+      liriMain(dataArr[0],dataArr[1]);
+    }
+    // outputSpotify(dataArr[1]);
   });
 }
 // =======================================================================
@@ -71,6 +53,7 @@ function outputSpotify(spotifySearch) {
     var tracks = data.tracks;
     for (var i = 0; i < data.tracks.items.length; i++) {
       var showData = [
+        "========== spotify-this =================",
         "Artists:\t\t" + tracks.items[i].album.artists[0].name,
         "Song name:\t\t" + tracks.items[i].name,
         "Album:\t\t\t" + tracks.items[i].album.name,
@@ -122,7 +105,7 @@ function shortDate(datetime) {
   return sDate[1] + "/" + sDate[2] + "/" + sDate[0];
 }
 // =======================================================================
-function axiosGet(url) {
+function axiosGet(url, command) {
   axios
     .get(url)
     .then(function(response) {
@@ -157,3 +140,33 @@ function onError(error) {
   }
   console.log(error.config);
 }
+
+function liriMain(command, query) {
+  switch (command) {
+    case "concert-this":
+      var apiURI =
+        "https://rest.bandsintown.com/artists/" +
+        query +
+        "/events?app_id=codingbootcamp";
+      axiosGet(apiURI, command);
+      break;
+    case "movie-this":
+      var apiURI =
+        "http://www.omdbapi.com/?t=" + query + "&y=&plot=short&apikey=trilogy";
+      axiosGet(apiURI, command);
+      break;
+    case "spotify-this-song":
+      if (query === "" || query === null || query === undefined) {
+        var query = "The Sign";
+      }
+      outputSpotify(query);
+      break;
+    case "do-what-it-says":
+      outputDWIS();
+      break;
+    default:
+      console.log("Sorry - command not understood.");
+  }
+}
+
+liriMain(cmd,qry);
